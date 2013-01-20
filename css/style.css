@@ -1,0 +1,39 @@
+body{
+	background-image: url(../images/comingsoon.jpg);
+	background-repeat: no-repeat;
+	background-size: 960px;
+	background-color: #000000;
+	margin: 250px 0 0 300px;
+}
+
+/*div{
+	margin: 200px 550px 0 300px;
+}*/
+
+h1{
+	color: #ffffff;
+	font: 80px "Times New Roman" serif;
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+	color: #cccccc;
+	font: 25px "Helvetica Neue";
+	padding: 0 0 0 10px;
+	margin: -10px 0 0 0;
+}
+
+h3{
+	color: #1193cc;
+	font: 20px "Helvetica Neue";
+	padding: 0 0 0 330px;
+	margin: 0px 0 0 0;
+}
+
+p{
+	color: #ffffff;
+	font: 14px "Helvetica Neue";
+	padding: 0 0 0 50px;
+	margin: 50px 0 0 0;
+}
