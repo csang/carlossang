@@ -1,0 +1,386 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* @import "compass/reset"; */
+/* line 10, ../sass/screen.scss */
+html {
+  background-color: #000000;
+  background-image: url(../img/bg/carlossang_white_pattern_bg.gif);
+  background-size: 10px;
+  font-family: Eurostile, serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #1a1a1a;
+}
+
+/* line 20, ../sass/screen.scss */
+input, textarea {
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+}
+
+/* line 25, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* line 29, ../sass/screen.scss */
+h1 {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+/* line 34, ../sass/screen.scss */
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+/* line 39, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 44, ../sass/screen.scss */
+header, #resume, #contact, .ads {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 48, ../sass/screen.scss */
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  clear: both;
+}
+/* line 58, ../sass/screen.scss */
+header .nav {
+  float: left;
+}
+/* line 61, ../sass/screen.scss */
+header .nav .mainnav {
+  margin: 15px 0 0;
+  padding: 0 0 0 10px;
+}
+/* line 65, ../sass/screen.scss */
+header .nav .mainnav li {
+  width: 100px;
+  height: 31px;
+  text-align: center;
+}
+/* line 71, ../sass/screen.scss */
+header .nav .mainnav a:hover li {
+  border-bottom: 4px dotted #1a1a1a;
+}
+/* line 74, ../sass/screen.scss */
+header .nav .mainnav a:active li {
+  border: none;
+}
+/* line 79, ../sass/screen.scss */
+header .nav .subnav {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100px;
+  margin: 0 0 0 113px;
+  padding: 0;
+  display: none;
+}
+/* line 87, ../sass/screen.scss */
+header .nav .subnav li {
+  width: 100px;
+  height: 31px;
+  text-align: center;
+  padding: 10px 0 0;
+  list-style: none;
+}
+/* line 95, ../sass/screen.scss */
+header .nav .subnav a {
+  text-decoration: none;
+}
+/* line 99, ../sass/screen.scss */
+header .nav .subnav a:hover li {
+  border: none;
+}
+/* line 105, ../sass/screen.scss */
+header .time {
+  margin: 0 10px;
+  float: right;
+}
+
+/* line 111, ../sass/screen.scss */
+.flash {
+  margin: 50px 0 0;
+  padding: 10px 0;
+}
+/* line 115, ../sass/screen.scss */
+.flash p {
+  color: #eeeeee;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 122, ../sass/screen.scss */
+.error {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* line 126, ../sass/screen.scss */
+.success {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+/* line 130, ../sass/screen.scss */
+.container {
+  text-align: center;
+}
+/* line 135, ../sass/screen.scss */
+.container .top {
+  margin: 50px auto 75px;
+  padding-top: 75px;
+}
+/* line 138, ../sass/screen.scss */
+.container .top img {
+  width: 300px;
+  margin: 20px 0;
+}
+/* line 144, ../sass/screen.scss */
+.container #resume {
+  padding: 100px 0 0;
+  text-align: left;
+  clear: both;
+  width: 100%;
+}
+/* line 149, ../sass/screen.scss */
+.container #resume div {
+  height: 325px;
+  width: 300px;
+  margin: 0 0 25px 50px;
+  padding: 0;
+  float: left;
+}
+/* line 157, ../sass/screen.scss */
+.container #resume a:hover {
+  text-decoration: underline;
+}
+/* line 161, ../sass/screen.scss */
+.container #resume li {
+  margin: 0 0 5px;
+}
+/* line 166, ../sass/screen.scss */
+.container #portfolio {
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  text-align: left;
+}
+/* line 174, ../sass/screen.scss */
+.container #portfolio a:hover {
+  text-decoration: underline;
+}
+/* line 178, ../sass/screen.scss */
+.container #portfolio .apps {
+  width: 1440px;
+}
+/* line 182, ../sass/screen.scss */
+.container #portfolio h1 {
+  margin: 0;
+}
+/* line 186, ../sass/screen.scss */
+.container #portfolio h2, .container #portfolio h3 {
+  margin: 0 25px 0;
+}
+/* line 190, ../sass/screen.scss */
+.container #portfolio div {
+  padding: 100px 0 0;
+}
+/* line 193, ../sass/screen.scss */
+.container #portfolio div .list {
+  padding: 0;
+}
+/* line 197, ../sass/screen.scss */
+.container #portfolio div .site, .container #portfolio div .photo {
+  width: 300px;
+  margin: 0 0 0 10px;
+  padding: 50px 0 0;
+  display: inline-block;
+}
+/* line 205, ../sass/screen.scss */
+.container #portfolio img {
+  width: 280px;
+  margin: 15px 0 15px 10px;
+}
+/* line 212, ../sass/screen.scss */
+.container .center {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 217, ../sass/screen.scss */
+.container .center img {
+  height: 70px;
+  margin: 15px 0 15px 20px;
+}
+/* line 224, ../sass/screen.scss */
+.container #contact {
+  padding: 100px 0;
+}
+/* line 227, ../sass/screen.scss */
+.container #contact form {
+  width: 300px;
+  margin: 0 auto;
+}
+/* line 231, ../sass/screen.scss */
+.container #contact form input:not(.submit) {
+  margin: 2px;
+}
+/* line 235, ../sass/screen.scss */
+.container #contact form textarea {
+  resize: none;
+}
+/* line 239, ../sass/screen.scss */
+.container #contact form input:not(.submit), .container #contact form textarea {
+  width: 280px;
+  background-color: #f2f2f2;
+  border: 2px inset #f2f2f2;
+  border-top: 2px inset #1a1a1a;
+  border-left: 2px inset #1a1a1a;
+  color: #1a1a1a;
+  padding: 5px;
+}
+/* line 249, ../sass/screen.scss */
+.container #contact form .submit {
+  width: 295px;
+  background-color: #f2f2f2;
+  border: 2px outset #1a1a1a;
+  margin: 2px;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+/* line 258, ../sass/screen.scss */
+.container #contact form .submit:hover {
+  background-color: #1a1a1a;
+  border: 2px outset #f2f2f2;
+  color: #f2f2f2;
+}
+/* line 264, ../sass/screen.scss */
+.container #contact form .submit:active {
+  background-color: #999999;
+  border: 2px outset #1a1a1a;
+  color: #1a1a1a;
+}
+
+/* line 273, ../sass/screen.scss */
+.social_box {
+  width: 100%;
+  padding: 10px 0;
+  /*display: inline;
+  text-align: center;*/
+}
+/* line 281, ../sass/screen.scss */
+.social_box .copyright {
+  position: fixed;
+  bottom: 0;
+  color: #eeeeee;
+  font-size: 12px;
+  margin: 5px;
+}
+/* line 289, ../sass/screen.scss */
+.social_box .social_links {
+  width: 100%;
+}
+/* line 292, ../sass/screen.scss */
+.social_box .social_links .social {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  /*border: 2px inset $blue;*/
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px 0 10px 40px;
+  overflow: hidden;
+  /*-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);*/
+}
+/* line 308, ../sass/screen.scss */
+.social_box .social_links .social img {
+  width: 50px;
+  /*-webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);*/
+}
+/* line 319, ../sass/screen.scss */
+.social_box .social_links .gh {
+  background-color: #f2f2f2;
+}
+
+/* line 329, ../sass/screen.scss */
+.calendar .mode_month .days {
+  text-align: left;
+}
+/* line 332, ../sass/screen.scss */
+.calendar .mode_month .days .day {
+  width: 14.2857143%;
+  height: 50px;
+}
+/* line 336, ../sass/screen.scss */
+.calendar .mode_month .days .day h4 {
+  text-align: right;
+  margin: 5px 5px 0 0;
+}
+
+/* line 344, ../sass/screen.scss */
+.ads {
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 348, ../sass/screen.scss */
+.ads .ad {
+  width: 300px;
+  height: 600px;
+  background-color: #1a1a1a;
+  margin: 10px;
+}
+
+/* line 356, ../sass/screen.scss */
+.inline {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Media Queries */
+/*--------------------------------------------------------------------------------*/
+/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+/* Landscape phone to portrait tablet */
+@media (max-width: 699px) {
+  /* line 391, ../sass/screen.scss */
+  .container #resume div {
+    height: auto;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 404, ../sass/screen.scss */
+  header .time {
+    display: none;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 418, ../sass/screen.scss */
+  .container input:not(.submit), .container textarea {
+    width: 90%;
+  }
+  /* line 422, ../sass/screen.scss */
+  .container .bottom .contact form input.submit {
+    width: 98%;
+  }
+}

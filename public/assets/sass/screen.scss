@@ -1,0 +1,427 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/* @import "compass/reset"; */
+@import "compass/css3";
+@import "colors";
+
+html{
+	background-color: #000000;
+	background-image: url(../img/bg/carlossang_white_pattern_bg.gif);
+	background-size: 10px;
+	font-family: Eurostile, serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: $black;
+}
+
+input, textarea{
+	font-family: "Helvetica Neue", serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+h1{
+	text-align: center;
+	margin: 0 0 50px;
+}
+
+a{
+	color: $black;
+	text-decoration: none;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header, #resume, #contact, .ads{
+	background-color: $w_alpha;
+}
+
+header{
+	
+	width: 100%;
+	height: 50px;
+	
+	margin: 0;
+	position: fixed;
+	top: 0;
+	clear: both;
+
+	.nav{
+		float: left;
+
+		.mainnav{
+			margin: 15px 0 0;
+			padding: 0 0 0 10px;
+
+			li{
+				width: 100px;
+				height: 31px;
+				text-align: center;
+			}
+
+			a:hover li{
+				border-bottom: 4px dotted $black;
+			}
+			a:active li{
+				border: none;
+			}
+		}
+
+		.subnav{
+			position: absolute;
+			background-color: $w_alpha;
+			width: 100px;
+			margin: 0 0 0 113px;
+			padding: 0;
+			display: none;
+
+			li{
+				width: 100px;
+				height: 31px;
+				text-align: center;
+				padding: 10px 0 0;
+				list-style: none;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			a:hover li{
+				border: none;
+			}
+		}
+	}
+
+	.time{
+		margin: 0 10px;
+		float: right;
+	}
+}
+
+.flash{
+	margin: 50px 0 0;
+	padding: 10px 0;
+
+	p{
+		color: $dWhite;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.error{
+	background-color: rgba(255,0,0,.5);
+}
+
+.success{
+	background-color: rgba(0,255,0,.5);
+}
+
+.container{
+	
+	// color: $black;
+	text-align: center;
+
+	.top{
+		margin: 50px auto 75px;
+		padding-top: 75px;
+		img{
+			width: 300px;
+			margin: 20px 0;
+		}
+	}
+
+	#resume{
+		padding: 100px 0 0;
+		text-align: left;
+		clear: both;
+
+		div{
+			height: 325px;
+			width: 300px;
+			margin: 0 0 25px 50px;
+			padding: 0;
+			float: left;
+		}
+
+		a:hover{
+			text-decoration: underline;
+		}
+
+		li{
+			margin: 0 0 5px;
+		}
+	}
+
+	#portfolio{
+		padding: 100px 0;
+		width: 100%;
+		overflow: hidden;
+		overflow-x: auto;
+		// background-color: $b_alpha;
+		text-align: left;
+
+		a:hover{
+			text-decoration: underline;
+		}
+
+		.apps{
+			width: 1440px;
+		}
+
+		h1{
+			margin: 0;
+		}
+
+		h2, h3{
+			margin: 0 25px 0;
+		}
+
+		div{
+			padding: 100px 0 0;
+
+			.list{
+				padding: 0;
+			}
+
+			.site, .photo{
+				width: 300px;
+				margin: 0 0 0 10px;
+				padding: 50px 0 0;
+				display: inline-block;				
+			}
+		}
+
+		img{
+			// height: 144px;
+			width: 280px;
+			margin: 15px 0 15px 10px;
+		}
+	}
+
+	.center{
+		background-color: $w_alpha;
+		// border-top: 1px solid $dWhite;
+		// border-bottom: 1px solid $dWhite;
+
+		img{
+			height: 70px;
+			margin: 15px 0 15px 20px;
+		}
+	}
+
+
+	#contact{
+		padding: 100px 0;
+	
+		form{
+			width: 300px;
+			margin: 0 auto;
+
+			input:not(.submit){
+				margin: 2px;
+			}
+
+			textarea{
+				resize: none;
+			}
+
+			input:not(.submit), textarea{
+				width: 280px;
+				background-color: $white;
+				border: 2px inset $white;
+				border-top: 2px inset $black;
+				border-left: 2px inset $black;
+				color: $black;
+				padding: 5px;
+			}
+
+			.submit{
+				width: 295px;
+				background-color: $white;
+				border: 2px outset $black;
+				margin: 2px;
+				cursor: pointer;
+				color: $black;
+			}
+
+			.submit:hover{
+				background-color: $black;
+				border: 2px outset $white;
+				color: $white;
+			}
+
+			.submit:active{
+				background-color: $gray;
+				border: 2px outset $black;
+				color: $black;
+			}
+		}
+	}
+}
+
+.social_box{	
+	width: 100%;
+	// background-color: $w_alpha;
+	// border-top: 1px solid $blue;
+	padding: 10px 0;
+	/*display: inline;
+	text-align: center;*/
+
+	.copyright{
+		position: fixed;
+		bottom: 0;
+		color: #eeeeee;
+		font-size: 12px;
+		margin: 5px;
+	}
+
+	.social_links{
+		width: 100%;
+
+		.social{
+			width: 50px;
+			height: 50px;
+			background-color: rgba(0,0,0,1);
+			/*border: 2px inset $blue;*/
+			border-radius: 10px;
+			display: inline-block;
+			margin: 10px 0 10px 40px;
+			overflow: hidden;
+
+			/*-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);*/
+
+			img{
+				width: 50px;
+
+				/*-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);*/
+			}
+		}
+
+		.gh{
+			background-color: $white;
+		}
+	}
+}
+
+
+
+.calendar{
+
+	.mode_month .days{
+		text-align: left;
+
+		.day{
+			width: 14.2857143%;
+			height: 50px;
+
+			h4{
+				text-align: right;
+				margin: 5px 5px 0 0;
+			}
+		}
+	}
+}
+
+.ads{
+	padding: 100px 0;
+	text-align: center;
+
+	.ad{
+		width: 300px;
+		height: 600px;
+		background-color: $black;
+		margin: 10px;
+	}
+}
+
+.inline{
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Media Queries */
+/*--------------------------------------------------------------------------------*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+
+
+}
+
+@media (max-width: 699px) {
+
+.container{
+
+	#resume{
+
+		div{
+			height: auto;
+			margin-left: 20px;
+		}
+	}
+}
+
+}
+
+@media (max-width: 600px) {
+
+header{
+	
+	.time{
+		display: none;
+	}
+}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+
+.container{
+
+	input:not(.submit), textarea{
+		width: 90%;
+	}
+
+	.bottom .contact form input.submit{
+		width: 98%;
+	}
+}
+
+}
